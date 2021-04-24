@@ -1,0 +1,109 @@
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+width: 100%;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+.custom-toggler.navbar-toggler {
+           border-color: red;
+       }
+       .custom-toggler .navbar-toggler-icon {
+            background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(128, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+body{
+    background-color: #000;
+}
+.bg-dark {
+    background-color: #000!important;
+}
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+.container{
+    position: relative;
+}
+.container .background img{
+    position: absolute;
+    width: 550px;
+    height: 80vh;
+    opacity: 0.4;
+}
+
+.container .heading{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    min-height: 65vh;
+    margin-left: 100px;
+}
+.container .heading h1{
+    padding-bottom: 15px;
+    font-size: 40px;
+
+}
+.container .heading p{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.container .heading button{
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    border: 2px  solid transparent;
+}
+
+.container .image img{
+    margin-left: 40%;
+    width: 700px;
+    height: 400px;
+/* for image reflection */
+
+-webkit-box-reflect: below 2px linear-gradient(transparent, transparent, rgba(0,0,0,0.4));
+}
+
+
+
+.empty{
+    position: absolute;
+    clip-path: polygon(82% 0, 100% 0, 100% 61%, 38% 61%);
+    background-color: red;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: -1000;
+}
+@media only screen and (max-width: 900px) {
+  .container .image img{
+      margin: 0;
+      margin-top: -30px;
+      width: 500px;
+      height: 300px;
+  }
+
+#register{
+  margin-left: auto;
+  margin-right: auto;
+}
+  .container .heading {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-left: 10px;
+    top: 80vh;
+    margin: 0;
+}
+}
